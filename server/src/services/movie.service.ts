@@ -6,9 +6,8 @@ dotenv.config()
 const moviesInstance = axios.create({
   baseURL: "http://www.omdbapi.com",
 });
-// "e885a14e"
-const apiKey = process.env.APIKEY;
-console.log('apkeyi',apiKey)
+
+const apiKey = process.env.APIKEY||"e885a14e";
 const defaultExperation = 3600;
 
 const getMovieByName = async (name: string) => {
