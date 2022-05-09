@@ -1,0 +1,20 @@
+.modal-body{
+    padding:20px;
+    display:grid;
+    grid-auto-flow: column;
+    gap:20px;
+    grid-template-columns: 3fr 2fr;
+}
+.span{
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    .modal-body{
+        grid-auto-flow: row;
+        grid-template-columns:unset;
+    }
+    p{
+        font-size: 14px;
+        margin :5px 0 0 ;
+    }
+}
