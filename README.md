@@ -1,15 +1,16 @@
 for run this porject follow this steps
 
 npm i concurrently -g
---
+
 if you dont have redis in your computer
 download redis https://redis.io/docs/getting-started/
 
 if you have redis in your computer 
-run in your terminal redis-server this will run your redis in default port 6379
+run in your terminal redis-server (this will run your redis in default port 6379)
 
 in another tab..
-git clone this project
+clone the project
+git clone https://github.com/lidorBaraens110/ombd-movie.git
 cd omdb-movies 
 cd client 
 npm install
