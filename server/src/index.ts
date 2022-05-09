@@ -11,7 +11,7 @@ export const redisClient = redis.createClient();
 redisClient.on('error', (err) => console.log('Redis Client Error', err));
 redisClient.connect();
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 
 const app:Application=express();
 

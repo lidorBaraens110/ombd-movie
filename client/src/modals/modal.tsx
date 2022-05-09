@@ -11,7 +11,7 @@ const ModalMovie:FC<IModal>=({open,modalMovie,toggle})=> {
 
     return (
       
-        <Modal size='sm' isOpen={open} toggle={toggle}>
+        <Modal size='lg' isOpen={open} toggle={toggle}>
           <ModalHeader toggle={toggle}>{modalMovie?.Title}</ModalHeader>
           <ModalBody>
             <div className="details">

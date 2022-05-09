@@ -18,8 +18,13 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await getData("/");
-      setPopularMovies(data);
-      setMovies(data);
+      if(data){
+        setError('')
+        setPopularMovies(data);
+        setMovies(data);
+      }else{
+        setError('something go wrong');
+      }
     };
     fetchData();
   }, []);
