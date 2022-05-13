@@ -5,10 +5,8 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import * as redis from 'redis';
 
-dotenv.config()
-// console.log( 'host:', process.env.REDIS_HOSTNAME,
-//     'port: ',process.env.REDIS_PORT,
-//     'password: ',process.env.REDIS_PASSWORD)
+dotenv.config();
+
 export const redisClient =  redis.createClient({
     url: 'redis://redis-17516.c9.us-east-1-2.ec2.cloud.redislabs.com:17516/',
     password: 'L5VbcxzFzsReXoRSP2X2UBRvr3TcTVYD'
